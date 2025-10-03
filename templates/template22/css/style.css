@@ -100,7 +100,7 @@ body {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #83b0b9;
+	color: #e32b42;
 }
 
 .successalert {
@@ -220,7 +220,13 @@ _:-ms-fullscreen,
 }
 
 .section1 {
-	position: relative;
+	position: fixed;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff !important;
 }
 
 .icon-visibility {
@@ -343,6 +349,14 @@ _:-ms-fullscreen,
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(5px);
+}
+
+.hvr-sweep-to-right::before {
+	background: none !important;
+}
+
+.theme-btn:hover {
+	background-color: #e32b42 !important;
 }
 
 .tem-img {
@@ -505,6 +519,12 @@ _:-ms-fullscreen,
 	padding-top: 84px;
 }
 
+.couple-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .couple-name span {
 	font-size: 60px;
 	color: #f0394d;
@@ -515,7 +535,21 @@ _:-ms-fullscreen,
 }
 
 .couple-name h1 {
-	text-transform: capitalize;
+	/* text-transform: capitalize;
+	font-size: 55px;
+	color: #e32b42;
+	text-shadow: 2px 2px 0px #e32b42; */
+	font-family: 'Great Vibes', cursive;
+	/* font thư pháp */
+	font-size: 80px;
+	font-weight: normal;
+	background: linear-gradient(45deg, #ffcc00, #ff6699, #ff0000);
+	/* vàng → hồng → đỏ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* chữ trong suốt để lộ gradient */
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	/* bóng nhẹ */
 }
 
 .the-couple-data h3 {
@@ -1398,18 +1432,25 @@ _:-ms-fullscreen,
 .menubar-s2 svg {
 	fill: #e32b42;
 	width: auto;
-	height: 21px;
+	height: 30px;
 	display: block;
 	text-align: center;
 	margin: 0px auto 10px auto;
 }
 
 .menubar-s2 a {
+
 	text-align: center !important;
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	text-transform: uppercase !important;
+	font-size: 28px !important;
+	font-weight: bold !important;
 	border-top: 3px solid transparent;
+
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	background: linear-gradient(45deg, #ffcc00, #ff6699, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .ver-menu-s2 a {
@@ -2120,7 +2161,6 @@ h2.resp-accordion:first-child {
 		position: fixed;
 		top: 0px;
 		width: 100%;
-		background-color: #fff;
 		z-index: 9999;
 		padding: 11px 0px;
 	}
@@ -2147,7 +2187,7 @@ h2.resp-accordion:first-child {
 	}
 
 	.main-section-s2 {
-		padding-top: 69px;
+		padding-top: 0px;
 	}
 
 	.inner-data .couple-name h1,
@@ -2618,6 +2658,7 @@ h2.resp-accordion:first-child {
 @media screen and (max-width: 767px) {
 	.navbar-nav {
 		margin: 0 !important;
+		background: #851724;
 	}
 
 	.the-couple-title p span {
@@ -3695,13 +3736,13 @@ h2.resp-accordion:first-child {
 
 #clock>div {
 	background: rgba(255, 255, 255, .1);
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 140px;
 	margin: 0 15px 0px;
 	text-align: center;
 	padding: 30px 10px;
 	border-radius: 100%;
-	border: 3px solid #03c0cc;
+	border: 3px solid #df4758;
 }
 
 @media (max-width: 991px) {
@@ -3718,7 +3759,7 @@ h2.resp-accordion:first-child {
 }
 
 #clock .box>div {
-	font-size: 30px;
+	font-size: 35px;
 	margin-bottom: 0.1em;
 	line-height: 1em;
 	text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
@@ -3787,7 +3828,7 @@ h2.resp-accordion:first-child {
 
 .hover_active:before,
 .hvr-overline-from-center1 .hover_active:before {
-	background: #e32b42 !important;
+	background: #fff !important;
 }
 
 .pagination-button {
@@ -4201,7 +4242,6 @@ label#content-error {
 
 
 	/* Ẩn các tim trang trí trong khối couple (đỡ rối mắt) */
-	.couple-name .glyphicon-heart,
 	.the-couple .glyphicon-heart {
 		display: none !important;
 	}
@@ -4285,60 +4325,64 @@ label#content-error {
 		background-color: rgba(255, 255, 255, .6);
 	}
 
-	
+
 }
 
 
 .blur-img.bg-home {
-	background-image: url("../../../images/demo.jpg");
+	background-image: url("../../../images/banner/main.jpg");
+	object-fit: cover;
+	background-color: rgb(0 0 0 / 19%);
+	background-blend-mode: darken;
 }
 
 @media (min-width: 768px) {
 	.blur-img.bg-home {
-		background-image: url("../../../images/demo.jpg");
+		background-image: url("../../../images/banner/main.jpg");
 	}
 }
+
 @media (min-width: 1200px) {
 	.blur-img.bg-home {
-		background-image: url('../../../images/demo.jpg');
+		background-image: url("../../../images/banner/main.jpg");
+		object-fit: cover;
 	}
 }
 
 
-.blur-img.bg-couple {
-	background-image: url("../../../images/demo.jpg");
-}
 
 @media (min-width: 768px) {
 	.blur-img.bg-couple {
-		background-image: url("../../../images/demo.jpg");
+		background-image: url("../../../images/banner/page2.jpg");
 	}
 }
+
 @media (min-width: 1200px) {
 	.blur-img.bg-couple {
-		background-image: url('../../../images/demo.jpg');
+		background-image: url('../../../images/banner/page2.jpg');
 	}
 }
 
 
 .blur-img.bg-wedding {
-	background-image: url("../../../images/demo.jpg");
+	background-image: url("../../../images/banner/page3.jpg");
 }
 
 @media (min-width: 768px) {
 	.blur-img.bg-wedding {
-		background-image: url("../../../images/demo.jpg");
+		background-image: url("../../../images/banner/page3.jpg");
 	}
 }
+
 @media (min-width: 1200px) {
 	.blur-img.bg-wedding {
-		background-image: url('../../../images/demo.jpg');
+		background-image: url('../../../images/banner/page3.jpg');
 	}
 }
 
 
 .blur-img.bg-gifts {
-	background-image: url("../../../images/demo.jpg");
+	background-image: url("../../../images/banner/page2.jpg");
 }
 
 @media (min-width: 768px) {
@@ -4346,6 +4390,7 @@ label#content-error {
 		background-image: url("../../../images/demo.jpg");
 	}
 }
+
 @media (min-width: 1200px) {
 	.blur-img.bg-gifts {
 		background-image: url('../../../images/demo.jpg');
@@ -4354,16 +4399,17 @@ label#content-error {
 
 
 .blur-img.bg-rsvp {
-	background-image: url("../../../images/demo.jpg");
+	background-image: url("../../../images/banner/page4.jpg");
 }
 
 @media (min-width: 768px) {
 	.blur-img.bg-rsvp {
-		background-image: url("../../../images/demo.jpg");
+		background-image: url("../../../images/banner/page4.jpg");
 	}
 }
+
 @media (min-width: 1200px) {
 	.blur-img.bg-rsvp {
-		background-image: url('../../../images/demo.jpg');
+		background-image: url("../../../images/banner/page4.jpg");
 	}
 }
