@@ -441,7 +441,7 @@ _:-ms-fullscreen,
 		/* hoặc 100vh */
 		width: 100%;
 		background-size: cover !important;
-		background-position: -136px 38% !important;
+		background-position: 65% 38% !important;
 		/* << kéo sang phải */
 		background-repeat: no-repeat;
 	}
