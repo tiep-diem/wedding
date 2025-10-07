@@ -3010,6 +3010,7 @@ h2.resp-accordion:first-child {
 	.inner-data .couple-name h1,
 	.h1 {
 		font-size: 41px;
+		font-weight: bold;
 	}
 
 	.the-couple {
@@ -3759,6 +3760,8 @@ h2.resp-accordion:first-child {
 
 @media (max-width: 767px) {
 	#clock>div {
+		display: flex;
+		flex-direction: column;
 		text-align: center !important;
 		border-radius: 0;
 		border: none;
@@ -4360,7 +4363,6 @@ label#content-error {
 @media (max-width: 768px) {
 	.blur-img.bg-home {
 		background-image: url("../../../images/banner/main.jpg");
-		background-position: -136px 38% !important;
 	}
 }
 
