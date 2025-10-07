@@ -441,7 +441,7 @@ _:-ms-fullscreen,
 		/* hoặc 100vh */
 		width: 100%;
 		background-size: cover !important;
-		background-position: 44% 38% !important;
+		background-position: -136px 38% !important;
 		/* << kéo sang phải */
 		background-repeat: no-repeat;
 	}
@@ -461,11 +461,11 @@ _:-ms-fullscreen,
 .bg-main-image-overlay {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(97, 69, 44, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bg-main-image-overlay-2 {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
 	width: 100%;
 	position: fixed;
 	height: 100%;
@@ -474,7 +474,7 @@ _:-ms-fullscreen,
 }
 
 .bg-main-image-overlay-2-gallery {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
 	width: 100%;
 	position: fixed;
 	height: 100%;
@@ -482,7 +482,7 @@ _:-ms-fullscreen,
 }
 
 .bg-main-image-overlay-fixed {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
 	width: 100%;
 	position: fixed;
 	height: 100%;
@@ -626,7 +626,9 @@ _:-ms-fullscreen,
 }
 
 .page-title h2 {
-	color: #000;
+	font-size: 28px;
+	font-weight: bold;
+	color: #df3649;
 	position: relative;
 	padding: 35px 0px 15px;
 	display: inline-block;
@@ -732,8 +734,8 @@ _:-ms-fullscreen,
 
 .about-the-people {
 	text-align: center;
-	color: #000;
-	font-weight: 400;
+	color: #df3649;
+	font-weight: bold;
 	margin: 0px 0px 40px;
 }
 
@@ -969,7 +971,9 @@ _:-ms-fullscreen,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
+
 
 .ceremony-section .ceremony-detail>p {
 	min-height: 46px;
@@ -1133,10 +1137,11 @@ _:-ms-fullscreen,
 
 .ceremony-detail {
 	color: #000;
-	padding: 25px;
+	padding: 10px;
 }
 
 .ceremony-detail img {
+	margin-top: 15px;
 	margin-bottom: 10px;
 	max-width: 100%;
 }
@@ -1962,7 +1967,7 @@ h2.resp-accordion:first-child {
 	}
 
 	.ceremony-detail {
-		padding: 20px;
+		padding: 10px;
 	}
 
 	.ceremony-detail h5 {
@@ -3617,7 +3622,8 @@ h2.resp-accordion:first-child {
 }
 
 .donate-box .donate-card .qr-code-image {
-	max-width: 150px;
+	max-width: 200px;
+	height: 250px;
 	border: 1px solid #ccc;
 	padding: 3px;
 	margin: auto;
@@ -3735,7 +3741,12 @@ h2.resp-accordion:first-child {
 }
 
 #clock>div {
-	background: rgba(255, 255, 255, .1);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	background-color: rgb(97 69 44 / 36%);
 	width: 140px;
 	height: 140px;
 	margin: 0 15px 0px;
@@ -3745,9 +3756,6 @@ h2.resp-accordion:first-child {
 	border: 3px solid #df4758;
 }
 
-@media (max-width: 991px) {
-	#clock>div {}
-}
 
 @media (max-width: 767px) {
 	#clock>div {
@@ -3776,7 +3784,7 @@ h2.resp-accordion:first-child {
 }
 
 #clock .box span {
-	font-size: 16px;
+	font-size: 25px;
 	text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
 	font-weight: normal;
 }
@@ -3828,16 +3836,23 @@ h2.resp-accordion:first-child {
 
 .hover_active:before,
 .hvr-overline-from-center1 .hover_active:before {
-	background: #fff !important;
+	background: #d35657 !important;
 }
 
 .pagination-button {
 	display: none;
 	position: fixed;
-	width: 50%;
-	right: 0;
-	bottom: 0;
+	width: 100px;
+	right: 40px;
+	bottom: 50px;
 	justify-content: end;
+}
+
+@media (max-width: 500px) {
+	.pagination-button {
+		right: 20px;
+		bottom: 30px;
+	}
 }
 
 .pagination-button a {
@@ -3966,7 +3981,7 @@ h2.resp-accordion:first-child {
 	color: #fff !important;
 	border-radius: 3px;
 	text-decoration: none !important;
-	background-color: initial;
+	background-color: #e32b42 !important;
 	border: 1px solid #fff;
 	padding: 10px 20px;
 	font-weight: 300;
@@ -3976,6 +3991,13 @@ h2.resp-accordion:first-child {
 .website_info_container .theme-btn,
 .theme-btn1 .content-button svg {
 	margin-right: 5px;
+}
+
+.website_info_container .theme-btn span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
 }
 
 .parent-infos {
@@ -4332,13 +4354,13 @@ label#content-error {
 .blur-img.bg-home {
 	background-image: url("../../../images/banner/main.jpg");
 	object-fit: cover;
-	background-color: rgb(0 0 0 / 19%);
-	background-blend-mode: darken;
+	background-position: 40%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.blur-img.bg-home {
 		background-image: url("../../../images/banner/main.jpg");
+		background-position: -136px 38% !important;
 	}
 }
 

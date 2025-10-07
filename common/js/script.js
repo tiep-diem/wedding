@@ -434,6 +434,8 @@ if ($("#wish-form").length) {
             $('#clock').html(html);
         }
 		var time = $('#clock').data('date');
+
+        
         $('#clock').countdown(time.replace(/-/g,'/'), function(event) {
             if(event.type == 'stoped'){
                 var together = new Date($('#clock').data('date'));           

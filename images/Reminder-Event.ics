@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-// https://add-to-calendar-pro.com // button v1.18.7 //EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Ho_Chi_Minh
+X-LIC-LOCATION:Asia/Ho_Chi_Minh
+LAST-MODIFIED:20221015T115821Z
+BEGIN:STANDARD
+TZNAME:+07
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ff51f85a-22bf-4310-b523-62db69c3c309
+DTSTAMP:20251007T152043Z
+DTSTART;TZID=Asia/Ho_Chi_Minh:20251025T100000
+DTEND;TZID=Asia/Ho_Chi_Minh:20251026T180000
+SUMMARY:TIỆC CƯỚI (Đám cưới Đức Tiệp và Thị Diễm)
+DESCRIPTION:Cảm ơn bạn đã dành thời gian tham dự đám cưới của           
+                                              chúng tôi!. Thô
+ ng tin chi tiết xem tại                                     
+                    website:\nhttps://tiep-diem.github.io/
+X-ALT-DESC;FMTTYPE=text/html:
+ <!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 3.2//EN"">
+ <HTML><BODY>
+ Cảm ơn bạn đã dành thời gian tham dự đám cưới của           
+                                              chúng tôi!. Thô
+ ng tin chi tiết xem tại                                     
+                    website:<br><a href="https://tiep-diem.gi
+ thub.io/" target="_blank" rel="noopener">https://tiep-diem.g
+ ithub.io/</a>
+ </BODY></HTML>
+LOCATION:Thôn Sông - An Đổ - Bình Lục - Hà Nam
+SEQUENCE:0
+STATUS:CONFIRMED
+CREATED:20251007T152030Z
+LAST-MODIFIED:20251007T152030Z
+END:VEVENT
+END:VCALENDAR
