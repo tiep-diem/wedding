@@ -1141,7 +1141,7 @@ _:-ms-fullscreen,
 }
 
 .ceremony-detail img {
-	margin-top: 15px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 	max-width: 100%;
 }
@@ -4370,6 +4370,7 @@ label#content-error {
 	.blur-img.bg-home {
 		background-image: url("../../../images/banner/main.jpg");
 		object-fit: cover;
+		background-position: 0% 38% !important;
 	}
 }
 
@@ -4384,6 +4385,7 @@ label#content-error {
 @media (min-width: 1200px) {
 	.blur-img.bg-couple {
 		background-image: url('../../../images/banner/page2.jpg');
+		background-position: 0% 40% !important;
 	}
 }
 
